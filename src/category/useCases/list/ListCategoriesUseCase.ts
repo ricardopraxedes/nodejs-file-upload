@@ -1,3 +1,4 @@
+import { Category } from "../../model/Category";
 import { CategoryRepository } from "../../repository/CategoriesRepository";
 
 class ListCategoryUseCase {
