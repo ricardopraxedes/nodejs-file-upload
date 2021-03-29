@@ -1,11 +1,13 @@
 import { Category } from "../model/Category";
 
 class CategoryRepository {
-  private categories: Category[] = [];
+  private categories: Category[];
 
   private static INSTANCE: CategoryRepository;
 
-  constructor() {}
+  private constructor() {
+    this.categories = [];
+  }
 
   static getInstance() {
     if (!this.INSTANCE) {
